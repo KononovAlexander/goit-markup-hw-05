@@ -62,7 +62,9 @@
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
 
-          <button type="button" class="hero-btn">Заказать услугу</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -133,6 +135,9 @@
                 width="370"
                 alt="фото белый планшет"
               />
+              <div class="works-item-title">
+                <p>Десктопные приложения</p>
+              </div>
             </li>
             <li class="works-item">
               <img
@@ -140,6 +145,9 @@
                 width="370"
                 alt="фото ноутбук и телефон"
               />
+              <div class="works-item-title">
+                <p>Мобильные приложения</p>
+              </div>
             </li>
             <li class="works-item">
               <img
@@ -147,6 +155,9 @@
                 width="370"
                 alt="фото планшет и стилос"
               />
+              <div class="works-item-title">
+                <p>Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -495,5 +506,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal-window">
+        <div class="icon-wrap" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
